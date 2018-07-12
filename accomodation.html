@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ZEDLAND</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="themes/my-theme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script/config.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+<!--    javascript for creating the accomodation page-->
+    <script src="script/accomodatioshow.js"></script>
+<!--    javascript to create the accomodation list based on different categories-->
+    <script src="script/accomodationlist.js"></script>
+<!--    javascript that will retrive the information when the favourite button will be pressed-->
+    <script src="script/addfavourites.js"></script>
+<!--    javascript that will display the favourite propreties -->
+    <script src="script/getfavourites.js"></script>
+<!--    geolocation javascript-->
+    <script src="script/geolocation.js"></script>
+<!--    javascript for the swipe gallery-->
+    <script src="script/gallery.js"></script>
+</head>	
+<body>
+	<div data-role="page" id="accomodation">
+        <!--        SLIDING MENU-->
+         <div data-role="panel" id="navpanel" data-display="reveal" data-position="left">
+			<div data-role="controlgroup" data-corners="true">
+                <img src="images/logo.png" alt="shield" class="shieldBurger">
+				<a href="http://www.bbk.ac.uk/" class="ui-btn">University</a>
+				<a href="http://www.bbk.ac.uk/lib/front-page/" class="ui-btn">Library</a>
+				<a href="#" class="ui-btn">Ad Place</a>
+				<a href="#" class="ui-btn">Support Us</a>
+			</div>
+        </div>
+		<div data-role="header">
+			<h1><img src="images/logoHeader.png" alt="shield" class="shieldHeader"> ZEDLAND </h1>
+			<a href="#navpanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+			<a href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+		</div>
+		<div data-role="content">
+            <h3>PROPRETY ID:</h3>
+            <p id="propID"></p>
+            <h2 id="propertytitle"></h2>
+            <h3>Address</h3>
+            <div id="address"></div>
+            <div id="zone"></div>
+<!--            THE LINK TO THE POPUP WINDOW AND WHERE THE FIRST IMAGE WILL SHOW-->
+            <a id="gallery" href="#popupGallery" data-rel="popup" data-position-to="window" data-transition="fade"><figure class="cap-left"><div class="imgContent"></div></figure></a>
+            <h3>Price</h3>
+            <div id="money"></div>
+            <h3>Description</h3>
+            <div id="desc"></div>
+            <h3>Rate</h3>
+            <div id="rate"></div>
+			<a href="#" data-role="button" data-icon="star" id="addbtn">Add to Favourites</a>
+            <a href="https://titan.dcs.bbk.ac.uk/~sbau01/mad/madfma/map.html?id=" data-role="button" data-icon="location" id="mapButt">Find Property</a>
+        </div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+<!--        POPUP WINDOW WITH THE RESPECTIVE INFORMATION-->
+        <div data-role="popup" id="popupGallery" data-overlay-theme="b" data-theme="b" data-corners="false">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <div class="imgContent"></div>
+        </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ZEDLAND</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="themes/my-theme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script/config.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+<!--    javascript for creating the accomodation page-->
+    <script src="script/accomodatioshow.js"></script>
+<!--    javascript to create the accomodation list based on different categories-->
+    <script src="script/accomodationlist.js"></script>
+<!--    javascript that will retrive the information when the favourite button will be pressed-->
+    <script src="script/addfavourites.js"></script>
+<!--    javascript that will display the favourite propreties -->
+    <script src="script/getfavourites.js"></script>
+<!--    geolocation javascript-->
+    <script src="script/geolocation.js"></script>
+<!--    javascript for the swipe gallery-->
+    <script src="script/gallery.js"></script>
+</head>	
+<body>
+    <div data-role="page" id="about">
+        <!--        SLIDING MENU-->
+        <div data-role="panel" id="navpanel" data-display="reveal" data-position="left">
+			<div data-role="controlgroup" data-corners="true">
+                <img src="images/logo.png" alt="shield" class="shieldBurger">
+				<a href="http://www.bbk.ac.uk/" class="ui-btn">University</a>
+				<a href="http://www.bbk.ac.uk/lib/front-page/" class="ui-btn">Library</a>
+				<a href="#" class="ui-btn">Ad Place</a>
+				<a href="#" class="ui-btn">Support Us</a>
+			</div>
+        </div>
+		<div data-role="header">
+			<h1><img src="images/logoHeader.png" alt="shield" class="shieldHeader"> ZEDLAND </h1>
+			<a href="#navpanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+			<a href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+		</div>
+<!--        EXAMPLE OF COLLAPSIBLE SET -->
+        <div data-role="main" class="ui-content">
+            <h2>About</h2>
+			<div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+					<h3>Zedland Hotel Finder App</h3>
+					<p>
+					The Zedland Hotel Finder Web Application is designed for use by persons seeking accommodation in Zedland or the environs. It offers quick and easy searching, reservations facility, a bookmarks facility and geolocation.</p>
+					<p>
+					All hotels including the app have been visited and inspected by Zedland Tourism Officials. They have been ranked independently by our inspectors as five-star, four-star, or three-star, all hotels are regularly revisited by our inspectors on an annual basis. All visits are carried out anonymously, without prior warning.
+					</p>
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+					<h3>Privacy</h3>
+					<p>
+					The data that we collect from you may be transferred to, and stored at, a destination outside the European Economic Area ("EEA"). It may also be processed by staff operating outside the EEA who work for us or for one of our suppliers. Such staff maybe engaged in, among other things, the fulfilment of your order, the processing of your payment details and the provision of support services. By submitting your personal data, you agree to this transfer, storing or processing. We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this privacy policy.
+					</p>
+					<p>
+					Where we have given you (or where you have chosen) a password which enables you to access certain parts of our site, you are responsible for keeping this password confidential. We ask you not to share a password with anyone.
+                    </p>
+                    <p>
+                    Unfortunately, the transmission of information via the internet is not completely secure. Although we will do our best to protect your personal data, we cannot guarantee the security of your data transmitted to our site; any transmission is at your own risk. Once we have received your information, we will use strict procedures and security features to try to prevent unauthorised access.
+					</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="false" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+					<h3>Accessibility</h3>
+					<p>
+					Zedland Tourism is committed to providing a website that is accessible to the widest possible audience, regardless of technology or ability.We are actively working to increase the accessibility and usability of our website and in doing so adhere to many of the available standards and guidelines.
+					</p>
+					<p>
+					This website endeavours to conform to level Double-A of the World Wide Web Consortium (W3C) Web Content Accessibility Guidelines 3.0.
+					</p>
+					<p>
+					This site has been built using code compliant with W3C standards for HTML and CSS. The site displays correctly in current browsers and using standards compliant HTML/CSS code means any future browsers will also display it correctly.
+					</p>
+					<p>
+					Whilst Zedland Tourism strive to adhere to the accepted guidelines and standards for accessibility and usability, it is not always possible to do so in all areas of the website.
+					</p>
+				</div>
+			</div>
+        </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-id="footernav">
+            <ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
